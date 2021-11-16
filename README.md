@@ -58,7 +58,7 @@
         }
     ```
 
-3.  GET http://127.0.0.1:8000/api/site/{site}/subceribers -- get users subscribed on a set
+3.  GET http://127.0.0.1:8000/api/site/{site}/subscribers -- get users subscribed on a set
     ### sample response
     
     ```{
