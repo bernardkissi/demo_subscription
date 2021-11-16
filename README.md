@@ -10,17 +10,51 @@
 
 ## endpoints
 1.  POST http://127.0.0.1:8000/api/site/{site}/posts -- create posts for a particular website
-    sample request
+    ### sample request
+
     ```{
 	        "title": "ddkkdsadxch",
 	        "description": "fsdafd"
         }
     ```
+    ### response sample
+
+    ```
+        {
+            "data": {
+                "title": "ddkkdsadxch",
+                "slug": "ddkkdsadxch",
+                "description": "fsdafd",
+                "site_id": 1,
+                "updated_at": "2021-11-16T07:12:03.000000Z",
+                "created_at": "2021-11-16T07:12:03.000000Z",
+                "id": 30
+            }
+        }
+    ```
+
 2.  POST http://127.0.0.1:8000/api/site/{site}/subscribe -- subscribes a user to a plan on a site
     ### sample request
+
+
     ```{
             "user_id": 2,
             "plan_id": 30
+        }
+    ```
+
+    ### response sample
+
+    ```{
+            "data": {
+                "plan_id": 3,
+                "site_id": 8,
+                "starts_on": "2021-11-16T07:57:33.465906Z",
+                "user_id": 2,
+                "updated_at": "2021-11-16T07:57:33.000000Z",
+                "created_at": "2021-11-16T07:57:33.000000Z",
+                "id": 13
+            }
         }
     ```
 
