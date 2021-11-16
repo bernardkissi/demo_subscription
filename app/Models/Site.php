@@ -35,7 +35,7 @@ class Site extends Model
         return $this->belongsToMany(User::class);
     }
 
-    public function scopePopular(Builder $query, int $siteId): Builder
+    public function scopeCurrent(Builder $query, int $siteId): Builder
     {
         return $query->where('id', $siteId);
     }
